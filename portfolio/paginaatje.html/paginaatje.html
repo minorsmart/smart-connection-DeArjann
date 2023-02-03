@@ -1,0 +1,52 @@
+<h1>HALLLO WELKOM OP HET PAGINAATJE</h1>
+<title>Welkom</title>
+
+<p>Stukje tekst welkom welkom welkom</p>
+
+<img src="Fotos/5377C179-F3C3-4DC1-908C-EA662F19DE09[3355].jpeg" width="1000" height="20">
+
+<p> Dit ben ik in de bergen in Porto. Porto is in Portugal. SUPER GAAF</p>
+
+<!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 3, 2023 15:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+Klik voor <a href="https://www.linkedin.com/in/arjan-melchers/">LinkedIn</a>
+
+<p> Dit is een opsomming</p>
+<ul> 
+    <li> yes ye sye shgdnfnfbn </li>
+    <li> Nog eentje </li>
+</ul>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pEzMrCDk7Bo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
